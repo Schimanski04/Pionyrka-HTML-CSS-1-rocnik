@@ -1,0 +1,94 @@
+@media screen and (min-width: 501px) {
+    footer {
+        margin-top: var(--large-space);
+    }
+    
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #d6dbdf;
+        position: relative;
+        padding-bottom: var(--small-space);
+    }
+    
+    .udaje {
+        margin-left: -125px;
+    }
+    
+    .odkazy {
+        margin-left: -125px;
+    }
+    
+    .odkazy > a > img {
+        width: 45px;
+        margin-right: 5px;
+    }
+    
+    .logo > img {
+        width: 180px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin-left: -50px;
+    }
+    
+    .author {
+        background-color: rgb(174,182,191);
+        text-align: center;
+        padding: var(--small-space) 0;
+    }
+    
+    footer h4 {
+        color: #1b9bff;
+    }
+    
+    footer > p {
+        font-size: 12.5pt;
+    }
+    
+    footer a {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+        background-color: #d6dbdf;
+        position: relative;
+        padding-bottom: var(--small-space);
+    }
+    
+    .odkazy > a > img {
+        width: 45px;
+        margin-right: 5px;
+    }
+    
+    .logo > img {
+        display: none;
+    }
+    
+    .author {
+        background-color: rgb(174,182,191);
+        text-align: center;
+        padding: var(--small-space) 0;
+    }
+    
+    footer h4 {
+        color: #1b9bff;
+    }
+    
+    footer > p {
+        font-size: 10pt;
+    }
+    
+    footer a {
+        color: black;
+    }
+}

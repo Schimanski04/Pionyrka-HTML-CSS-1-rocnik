@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skiareál Pionýrská louka - ceník + otevírací doba</title>
+    <link rel="icon" href="./images/Logo_pionyrka.svg">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/prices.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/alerts.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+    <header>
+        <div class="nadpis">
+            <img src="./images/Logo_pionyrka.svg" alt="Pionýrská louka - logo" title="Pionýrská louka - logo">
+            <h1>Skiareál Pionýrská louka</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Domov</a></li>
+                <li><a href="./photogallery.html">Fotogalerie</a></li>
+                <li><a href="./school.html">Lyžařská škola</a></li>
+                <li><a class="active" href="./prices.html">Ceník + otevírací doba</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="alert-red alert-nadpis">
+            <p><strong>Z důvodu nářízení <a href="https://www.mzcr.cz/" class="alert-link" target="_blank">Ministerstva zdravotnictví ČR</a> je skiareál momentálně uzavřen!!!</strong></p>
+        </div>
+
+        <h3>Ceník skipasů:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Dítě (do 15 let)</th>
+                    <th scope="col">Dospělý</th>
+                    <th scope="col">Senior (65+)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Dopoledne (8:30-13:00)</th>
+                    <td>50 Kč</td>
+                    <td>80 Kč</td>
+                    <td>60 Kč</td>
+                </tr>
+                <tr>
+                    <th scope="row">Odpoledne (14:00-19:00)</th>
+                    <td>60 Kč</td>
+                    <td>100 Kč</td>
+                    <td>90 Kč</td>
+                </tr>
+                <tr>
+                    <th scope="row">Celý den</th>
+                    <td>75 Kč</td>
+                    <td>150 Kč</td>
+                    <td>120 Kč</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Otevírací doba:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Dopoledne</th>
+                    <th scope="col">Odpoledne</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Pondělí *</th>
+                    <td></td>
+                    <td>16:00 - 19:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Úterý *</th>
+                    <td></td>
+                    <td>16:00 - 19:00</td>  
+                </tr>
+                <tr>
+                    <th scope="row">Středa *</th>
+                    <td></td>
+                    <td>16:00 - 19:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Čtvrtek *</th>
+                    <td></td>
+                    <td>16:00 - 19:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Pátek *</th>
+                    <td></td>
+                    <td>15:00 - 19:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Sobota + Neděle</th>
+                    <td>8:30 - 13:00</td>
+                    <td>14:00 - 19:00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="alert-yellow">
+            <p>* Od 10-ti osob možnost individuální dohody pro dopolední hodiny. Stačí zavolat den předem na tel. <a href="tel:+420777645222">+420 777 645 222</a></p>
+        </div>
+
+        <form action="./prices.html">
+            <h4 class="h4_top">Jméno</h4>
+            <input type="text" size="10" name="textik" placeholder="např. Karel">
+            
+            <h4>Přijímení</h4>
+            <input type="text" size="10" name="textik" placeholder="např. Šikula">
+            
+            <h4>Emailová adresa</h4>
+            <input type="text" size="10" name="textik" placeholder="např. karel.sikula@gmail.com">
+
+            <h4>Datum vaší návštěvy + část dne</h4>
+            <input type="date" id="birthday" name="birthday">
+            
+            <br>
+
+            <select name="platforma" size="1">
+                <option value="win">Dítě (do 15 let)
+                <option value="linux">Dospělý
+                <option value="unix">Senior (65+)
+            </select>
+            
+            <br>
+
+            <select name="platforma" size="1">
+                <option value="win">dopolední (8:30-13:00)
+                <option value="linux">odpolední (14:00-19:00)
+                <option value="unix">celodenní (8:30-19:00)
+            </select>
+            
+            <br>
+
+            <textarea rows="4" cols="15" name="dlouhytext" placeholder="Chcete nám něco zdělit..."></textarea>
+            
+            <br>
+
+            <button type="submit" onclick="alert('Formulář nelze odeslat!!! 😁😁😁')">Odeslat</button>
+        </form>
+    </main>
+
+    <footer>
+        <section class="contacts">
+            <div class="udaje">
+                <h4>KONTAKT:</h4>
+                <p><a href="tel:+420777645222">+420 777 645 222</a></p>
+                <p><a href="mailto:vlekvysina@seznam.cz">vlekvysina@seznam.cz</a></p>
+                <p><a href="https://mapy.cz/zakladni?x=15.2940537&y=50.7404908&z=18&source=coor&id=15.29365674788437%2C50.74013776988961" target="_blank">Poloha skiareálu (Mapy.cz)</a></p>
+            </div>
+
+            <div class="odkazy">
+                <h4>SOUVUSEJÍCÍ STRÁNKY:</h4>
+                <p><a href="https://www.tanvald.cz/" target="_blank">Město Tanvald</a></p>
+                <p><a href="https://www.tanvald.eu/" target="_blank">Tanvald - volnočasový portál</a></p>
+                <p><a href="https://www.tjtanvald.cz/" target="_blank">TJ Tanvald</a></p>
+                <p><a href="https://www.zstanvald-sportovni.cz/" target="_blank">ZŠ Sportovní Tanvald</a></p>
+                <a href="https://www.facebook.com/vlekvysina.tanvald" target="_blank"><img src="./images/Facebook_logo.svg" alt="Sledujte nás na Facebooku" title="Sledujte nás na Facebooku"></a>
+                <a href="https://www.instagram.com/lyzovani_tanvald.cz/" target="_blank"><img src="./images/Instagram_logo.svg" alt="Sledujte nás na Instagramu" title="Sledujte nás na Instagramu"></a>
+            </div>
+
+            <div class="logo">
+                <img src="./images/Logo_pionyrka.svg" alt="Naše logo" title="Naše logo">
+            </div>
+        </section>
+
+        <section class="author">
+            <h4>Designed in 2021 by Šimon J.</h4>
+            <p>V případě potíží mě můžete kontaktovat na e-mail: <a href="mailto:simon.janata.020@pslib.cz">simon.janata.020@pslib.cz</a></p>
+        </section>
+    </footer>
+</body>
+</html>

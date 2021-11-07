@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@700&display=swap');
+
+:root {
+    --main-color: darkgray;
+    --main-background: white;
+    --small-space: .7em;
+    --large-space: 2em;
+    --font-size: 16pt;
+    --table-padding: 7px;
+}
+
+html {
+    font-size: var(--font-size);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+@media screen and (min-width: 501px) {
+    body {
+        max-width: 85vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f2f4f4;
+    }
+    
+    h3 {
+        color: orangered;
+        margin-left: var(--small-space);
+    }
+    
+    table {
+        table-layout: auto;
+        width: 80vw;
+        border-collapse: collapse;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        border: 3px solid orange;
+        border-radius: 10px;
+    }
+    
+    th {
+        border: 2px solid orange;
+        padding: var(--table-padding) 0;
+    }
+    
+    td {
+        border: 2px solid orange;
+        text-align: center;
+        padding: 5px 0;
+    }
+    
+    
+    /*-----Formulář-----*/
+    
+    form {
+        /*margin-left: var(--small-space);
+        margin-right: var(--small-space);*/
+        background-color: #d6dbdf;
+        border-radius: 8px;
+    }
+    
+    .h4_top {
+        padding-top: 2vw;
+    }
+    
+    form h4 {
+        margin-left: 1vw;
+        margin-top: 2vw;
+        margin-bottom: 1vw;
+        color: orangered;
+    }
+    
+    form input {
+        width: 78vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    
+    form select {
+        width: 78vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-top: 1vw;
+    }
+    
+    form textarea {
+        width: 78vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-top: 1vw;
+    }
+    
+    form button {
+        width: 15vw;
+        height: 3.5vw;
+        margin-top: 1vw;
+        margin-left: 1vw;
+        margin-bottom: 1vw;
+    }
+} 
+
+@media screen and (max-width: 500px) {
+    body {
+        max-width: 100vw;
+        background-color: #f2f4f4;
+    }
+    
+    h3 {
+        color: orangered;
+        margin-left: 25px;
+    }
+    
+    table {
+        table-layout: auto;
+        width: 95vw;
+        border-collapse: collapse;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        border: 3px solid orange;
+        border-radius: 10px;
+    }
+    
+    th {
+        border: 2px solid orange;
+        padding: var(--table-padding) 0;
+        font-size: 11pt;
+    }
+    
+    td {
+        border: 2px solid orange;
+        text-align: center;
+        padding: 5px 0;
+        font-size: 11pt;
+    }
+    
+    
+    /*-----Formulář-----*/
+    
+    form {
+        width: 95vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        background-color: #d6dbdf;
+        border-radius: 8px;
+        margin-bottom: var(--large-space);
+        padding-bottom: 10px;
+    }
+    
+    .h4_top {
+        padding-top: 2vw;
+    }
+    
+    form h4 {
+        margin-left: 1vw;
+        margin-top: 2vw;
+        margin-bottom: 1vw;
+        color: orangered;
+    }
+    
+    form input {
+        width: 78vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    
+    form select {
+        width: 78vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-top: 1vw;
+    }
+    
+    form textarea {
+        width: 78vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-top: 1vw;
+    }
+    
+    form button {
+        width: 25vw;
+        height: 5vh;
+        margin-top: 1vw;
+        margin-left: 1vw;
+        margin-bottom: 1vw;
+    }
+}
